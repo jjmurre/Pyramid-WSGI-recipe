@@ -6,9 +6,9 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 README = open('README.rst').read()
 CHANGES = ""
-version = "1.0.0"
+version = "1.0.1"
 
-requires = ['distribute',]
+requires = []
 
 setup(name='w20e.pyramidwsgi.recipe',
       version=version,
