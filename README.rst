@@ -15,6 +15,9 @@ your ''buildout.cfg'' like so::
     script_name = yourapp
     ini_file = ${buildout:directory}/production.ini
     apache_config = ${buildout:directory}/apache_wsgi.conf
+    initialization = 
+        import os
+        os.environ['HOME'] = '/tmp'
 
 This will create a python script in bin called ''yourapp.wsgi'' which
 mod_wsgi can load. You can also use the optional ''extra-paths''

@@ -7,6 +7,7 @@ sys.path[0:0] = [
     %(pypath)s,
 ]
 
+%(initialization)s
 from pyramid.paster import get_app, setup_logging
 ini_path = '%(config)s'
 setup_logging(ini_path)
